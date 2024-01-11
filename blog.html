@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        form{
+            margin-right: 25%;
+            margin-left: 25%;
+            width:50%;
+            border: groove;
+        }
+        h1{
+            text-align:center ;
+            color: #ffa500;
+        }
+        label{
+            margin-left: 1%;
+        }
+        .arrow-button {
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translateY(-50%);
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .input-container {
+            position: relative;
+            width: 100px;
+            margin: 20px;
+            }
+
+        .input-box {
+            width: 50%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            }
+        .expand-button {
+            cursor: pointer;
+            user-select: none;
+            width: 5%;
+            align-self: center;
+            font-weight: bold;
+            font-size: -webkit-xxx-large;
+            }
+
+        .list-content {
+            display: none;
+            }
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            }
+    </style>
+</head>
+
+<body>
+    
+    <form action="#"  >
+        <h1 >Create a New Blog Post</h1>
+        <label>Blog Title</label>
+        <br>
+        <input type="text" id="id1" required style="width: 95%; margin-left: 1%;"/><br>
+        <label>Blog Author</label><br>
+        <input type="text" id="id2" required style="width: 95%;  margin-left: 1%;"/><br>
+        <label>Blog Content</label><br>
+        <textarea id="id3" rows="5" required style="width: 95%;  margin-left: 1%;"></textarea>
+        
+        <input onclick="onsignup()" type="button" value="Submit" style=" margin-left: 1%;color:white; background-color: #ffa500; width: 97%; border-style: hidden; margin-bottom: 2%; border-radius: 2px ;">
+        <br>
+    </form>
+    <ul id="list-items"></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>
